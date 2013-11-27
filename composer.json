@@ -1,0 +1,12 @@
+{
+    "require-dev": {
+        "codeception/codeception": "1.8.*",
+        "codeception/aspect-mock": "*"
+    },
+    "autoload": {
+        "psr-0": {"Greeter\\": "src/"}
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}
