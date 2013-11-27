@@ -9,5 +9,4 @@ class CodeHelper extends \Codeception\Module
     {
         \AspectMock\Test::clean();
     }
-
 }

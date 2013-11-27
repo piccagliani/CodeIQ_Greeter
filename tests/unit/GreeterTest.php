@@ -1,5 +1,4 @@
 <?php
-use Codeception\Util\Stub;
 use AspectMock\Test as test;
 
 class GreeterTest extends \Codeception\TestCase\Test
@@ -12,11 +11,11 @@ class GreeterTest extends \Codeception\TestCase\Test
     /**
      * @dataProvider greetProvider
      */
-    public function testGreet($hour, $greet)
+    public function testGreet($hour, $message)
     {
         test::double('\Greeter\Greeter', ['getHour' => $hour]);
         $greeter = new \Greeter\Greeter();
-        $this->assertEquals($greet, $greeter->greet());
+        $this->assertEquals($message, $greeter->greet());
     }
 
     public function greetProvider()
